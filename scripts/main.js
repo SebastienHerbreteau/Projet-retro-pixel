@@ -1,22 +1,11 @@
+let start = document.querySelector(".start");
+let intro = document.querySelector(".intro");
+let musique = document.querySelector(".musique");
+let demarre = document.querySelector(".demarre");
+let moteur = document.querySelector(".moteur");
+let convecteurPng= document.querySelector(".convecteurPng");
+let reset = document.querySelector(".reset");
 
-
-// setInterval(() => {
-//     brightness = Math.floor(Math.random() * 100) + ("%");
-//     document.querySelector(".rouge").style.filter = `brightness(${brightness})`;
-//     console.log(brightness)
-// }, 1);
-
-// setInterval(() => {
-//     brightness = Math.floor(Math.random() * 100) + ("%");
-//     document.querySelector(".vert").style.filter = `brightness(${brightness})`;
-//     console.log(brightness)
-// }, 1);
-
- 
-// function tempo() {
-//      intervall = Math.floor(Math.random() * 500) + 0;
-//      return intervall
-// }
 
 function rouge(){
     setInterval(() => {
@@ -49,30 +38,29 @@ function jaune(){
 }
 
 
-
-let start = document.querySelector(".start");
-let intro = document.querySelector(".intro");
-let musique = document.querySelector(".musique");
-let demarre = document.querySelector(".demarre");
-let moteur = document.querySelector(".moteur");
-let convecteurPng= document.querySelector(".convecteurPng");
-
 start.onclick=function(){
     moteur.play();
 
     setTimeout(() => {
+        convecteurPng.classList.add("desactive");
         jaune();
-    }, 2500);
+    }, 2700);
     
     setTimeout(() => {
         vert();
-    }, 2550);
+    }, 2750);
 
     setTimeout(() => {
-        convecteurPng.classList.add("desactive");
         rouge();
-    }, 2600);
+    }, 2800);
     };
+
+reset.onclick=function(){
+    location.reload();
+return false;
+}
+
+
 
 
 

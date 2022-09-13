@@ -57,6 +57,16 @@ body {
   z-index: 4;
 }
 
+.reset {
+  left: 46.9%;
+  bottom: 6.4%;
+  width: 6.9%;
+  height: 4.7%;
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+}
+
 .bouton, .start, .launch {
   background-color: rgb(124, 74, 41);
   border: 3px solid gray;
