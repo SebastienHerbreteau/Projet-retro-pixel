@@ -16,6 +16,9 @@ let diodeVert = document.querySelector(".diodeVert");
 let levier = document.querySelector(".levier");
 let voiture = document.querySelector(".voiture");
 let frein = document.querySelector(".frein");
+let generique = document.querySelector(".generique")
+let fondu = document.querySelector(".fondu")
+let huey = document.querySelector(".huey")
 
 function rouge() {
   setInterval(() => {
@@ -109,3 +112,21 @@ levier.onclick = function () {
     voiture.classList.add("index");
   }, 8000);
 };
+
+setTimeout(() => {
+  generique.classList.add("animGene");
+  generique.classList.replace("desactive", "active");
+  
+}, 30000);
+
+setTimeout(() => {
+  fondu.classList.add("animFondu");
+  fondu.classList.replace("desactive", "active");
+  
+}, 28000);
+
+setTimeout(() => {
+  huey.play();
+  
+}, 29000);
+
