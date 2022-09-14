@@ -10,6 +10,12 @@ let voyage = document.querySelector(".voyage");
 let firstFlash = document.querySelector(".first-flash");
 let affiche = document.querySelector(".affiche");
 let fleche = document.querySelector(".fleche");
+let diodeRouge = document.querySelector(".diodeRouge");
+let diodeJaune = document.querySelector(".diodeJaune");
+let diodeVert = document.querySelector(".diodeVert");
+let levier = document.querySelector(".levier");
+let voiture = document.querySelector(".voiture");
+let frein = document.querySelector(".frein");
 
 function rouge() {
   setInterval(() => {
@@ -17,7 +23,7 @@ function rouge() {
     var max = 120;
     brightness = Math.floor(Math.random() * (max - min) + min) + "%";
     document.querySelector(".rouge").style.filter = `brightness(${brightness})`;
-    console.log(brightness);
+    diodeRouge.style.filter = `brightness(${brightness})`;
   }, 20);
 }
 
@@ -27,7 +33,7 @@ function vert() {
     var max = 150;
     brightness = Math.floor(Math.random() * (max - min) + min) + "%";
     document.querySelector(".vert").style.filter = `brightness(${brightness})`;
-    console.log(brightness);
+    diodeVert.style.filter = `brightness(${brightness})`;
   }, 100);
 }
 
@@ -37,7 +43,7 @@ function jaune() {
     var max = 100;
     brightness = Math.floor(Math.random() * (max - min) + min) + "%";
     document.querySelector(".jaune").style.filter = `brightness(${brightness})`;
-    console.log(brightness);
+    diodeJaune.style.filter = `brightness(${brightness})`;
   }, 1);
 }
 
@@ -68,9 +74,10 @@ fleche.onclick = function () {
   return false;
 };
 
-launch.onclick = function () {
+levier.onclick = function () {
   setTimeout(() => {
-    launch.classList.add("push");
+    levier.play();
+    // launch.classList.add("push");
   }, 1);
 
   setTimeout(() => {
@@ -82,11 +89,23 @@ launch.onclick = function () {
   }, 1800);
 
   setTimeout(() => {
+    frein.play();
+  }, 4000);
+
+  setTimeout(() => {
     intro.classList.add("desactive");
   }, 4300);
 
   setTimeout(() => {
     musique.play();
     affiche.classList.replace("desactive", "active");
-  }, 4300);
+  }, 4000);
+
+  setTimeout(() => {
+    voiture.classList.add("scale");
+  }, 5000);
+
+  setTimeout(() => {
+    voiture.classList.add("index");
+  }, 8000);
 };
