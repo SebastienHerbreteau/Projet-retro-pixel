@@ -69,21 +69,24 @@ fleche.onclick = function () {
 };
 
 launch.onclick = function () {
-  launch.classList.add("push");
   setTimeout(() => {
-    voyage.play();
+    launch.classList.add("push");
   }, 1);
 
   setTimeout(() => {
+    voyage.play();
+  }, 500);
+
+  setTimeout(() => {
     firstFlash.classList.add("animFirstFlash", "active");
-  }, 2000);
+  }, 1800);
 
   setTimeout(() => {
     intro.classList.add("desactive");
-  }, 4500);
+  }, 4300);
 
   setTimeout(() => {
     musique.play();
     affiche.classList.replace("desactive", "active");
-  }, 4500);
+  }, 4300);
 };
