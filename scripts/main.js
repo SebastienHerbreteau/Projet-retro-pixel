@@ -16,9 +16,10 @@ let diodeVert = document.querySelector(".diodeVert");
 let levier = document.querySelector(".levier");
 let voiture = document.querySelector(".voiture");
 let frein = document.querySelector(".frein");
-let generique = document.querySelector(".generique")
-let fondu = document.querySelector(".fondu")
-let huey = document.querySelector(".huey")
+let generique = document.querySelector(".generique");
+let fondu = document.querySelector(".fondu");
+let huey = document.querySelector(".huey");
+let plaque = document.querySelector(".plaque");
 
 function rouge() {
   setInterval(() => {
@@ -91,9 +92,9 @@ levier.onclick = function () {
     firstFlash.classList.add("animFirstFlash", "active");
   }, 1800);
 
-  setTimeout(() => {
-    frein.play();
-  }, 4000);
+  // setTimeout(() => {
+  //   frein.play();
+  // }, 4000);
 
   setTimeout(() => {
     intro.classList.add("desactive");
@@ -104,29 +105,27 @@ levier.onclick = function () {
     affiche.classList.replace("desactive", "active");
   }, 4000);
 
-  setTimeout(() => {
-    voiture.classList.add("scale");
-  }, 5000);
+  // setTimeout(() => {
+  //   voiture.classList.add("scale");
+  // }, 5000);
 
-  setTimeout(() => {
-    voiture.classList.add("index");
-  }, 8000);
+  //   setTimeout(() => {
+  //     voiture.classList.add("index");
+  //   }, 8000);
 };
 
-setTimeout(() => {
-  generique.classList.add("animGene");
-  generique.classList.replace("desactive", "active");
-  
-}, 30000);
+plaque.onclick = function () {
+  setTimeout(() => {
+    generique.classList.add("animGene");
+    generique.classList.replace("desactive", "active");
+  }, 2000);
 
-setTimeout(() => {
-  fondu.classList.add("animFondu");
-  fondu.classList.replace("desactive", "active");
-  
-}, 28000);
+  setTimeout(() => {
+    fondu.classList.add("animFondu");
+    fondu.classList.replace("desactive", "active");
+  }, 1);
 
-setTimeout(() => {
-  huey.play();
-  
-}, 29000);
-
+  setTimeout(() => {
+    huey.play();
+  }, 1000);
+};

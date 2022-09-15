@@ -466,7 +466,7 @@ body {
 }
 
 .animGene {
-  animation-duration: 50s;
+  animation-duration: 53s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-name: gene;
@@ -474,10 +474,10 @@ body {
 
 @keyframes gene {
   from {
-    bottom: -6500px;
+    bottom: -6900px;
   }
   to {
-    bottom: 1000px;
+    bottom: 0px;
   }
 }
 .titre {
@@ -508,6 +508,19 @@ body {
   to {
     opacity: 1;
   }
+}
+.plaque {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  bottom: 33%;
+  left: 43.5%;
+  z-index: 8;
+  cursor: pointer;
+}
+
+.test {
+  bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
