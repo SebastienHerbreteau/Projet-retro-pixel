@@ -10,5 +10,10 @@ Chaque développeur devait choisir une affiche et l'animer.
 J'ai choisi celle d'Aurélie POULENARD. (voir "Affiche Rétro Pixel VF.jpg")
 
 
+Utilisation :
 
+- Bouton "Start Engine" (allumage du panneau temporel)
+- Bouton "Reset" (refresh la page)
+- Levier => transition vers l'affiche
+- Après les animations, possibilité de lancer le "générique" => Cliquez sur la plaque d'immatriculation.
 
