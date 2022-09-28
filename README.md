@@ -14,6 +14,6 @@ Utilisation :
 
 - Bouton "Start Engine" (allumage du panneau temporel)
 - Bouton "Reset" (refresh la page)
-- Levier => transition vers l'affiche
+- Click Levier (création de  Rémi - https://github.com/Moringar) => transition vers l'affiche
 - Après les animations, possibilité de lancer le "générique" => Cliquez sur la plaque d'immatriculation.
 
